@@ -1,0 +1,408 @@
+ <!DOCTYPE html>
+ <html lang="en">
+     <head>
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <meta name="description" content="Abdul Rehman Portfolio & CV Website">
+         <meta name="author" content="Wajahat Ali">
+         <link rel="shortcut icon" href="./Img/favicon.ico"> 
+         <title>AR Portfolio</title>
+         <link rel="stylesheet" href="CSS/bootstrap.min.css">
+         <link rel="stylesheet" href="CSS/styles.css">
+         <link rel="stylesheet" href="CSS/fixed.css">
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+         <link rel="stylesheet" href="CSS/animate.min.css">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+         <script src="/JS/wow.min.js"></script>
+         
+<script src="./JS/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+
+     <body data-spy="scroll" data-bs-target="navbarResponsive">
+
+          <!--Header/Navbar-->
+
+          <div class="home">
+          <header class="header_area">
+            <div class="main-menu">
+                <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #000000;">
+                    <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="logo"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <div class="mr-auto"></div>
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#services">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#portfolio">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!--Landing page,intro-->
+
+        <div class="landing">
+          <div class="home-wrap">
+            <div class="home-inner">
+
+            </div>
+          </div>
+        </div>
+
+        <div class="caption text-center">
+          <h5 class="wow fadeInLeft" data-wow-duration="1s">Welcome! I'm</h5>
+          <h1 class="wow fadeInRight" data-wow-duration="1s">Abdur Rehman</h1>
+          <h4 class="wow fadeInRight typewrite" data-period="2000" data-type='[ "Designer", " Photographer", "Filmmaker", "Video Editor" ]'></h4>
+          <a class=" wow fadeInLeft btn btn-outline-light btn-lg" href="#about">About</a>
+        </div>
+        </div>
+
+        <script>
+        var TxtType = function(el, toRotate, period) {
+          this.toRotate = toRotate;
+          this.el = el;
+          this.loopNum = 0;
+          this.period = parseInt(period, 10) || 2000;
+          this.txt = '';
+          this.tick();
+          this.isDeleting = false;
+      };
+  
+      TxtType.prototype.tick = function() {
+          var i = this.loopNum % this.toRotate.length;
+          var fullTxt = this.toRotate[i];
+  
+          if (this.isDeleting) {
+          this.txt = fullTxt.substring(0, this.txt.length - 1);
+          } else {
+          this.txt = fullTxt.substring(0, this.txt.length + 1);
+          }
+  
+          this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+  
+          var that = this;
+          var delta = 200 - Math.random() * 100;
+  
+          if (this.isDeleting) { delta /= 2; }
+  
+          if (!this.isDeleting && this.txt === fullTxt) {
+          delta = this.period;
+          this.isDeleting = true;
+          } else if (this.isDeleting && this.txt === '') {
+          this.isDeleting = false;
+          this.loopNum++;
+          delta = 500;
+          }
+  
+          setTimeout(function() {
+          that.tick();
+          }, delta);
+      };
+  
+      window.onload = function() {
+          var elements = document.getElementsByClassName('typewrite');
+          for (var i=0; i<elements.length; i++) {
+              var toRotate = elements[i].getAttribute('data-type');
+              var period = elements[i].getAttribute('data-period');
+              if (toRotate) {
+                new TxtType(elements[i], JSON.parse(toRotate), period);
+              }
+          }
+          // INJECT CSS
+          var css = document.createElement("style");
+          css.type = "text/css";
+          css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+          document.body.appendChild(css);
+      };
+    </script>
+          <!--End of main ladning page-->
+
+
+          <!--About section start-->
+
+         <section class="about-area wow" id="about" >
+           <div class="container-fluid">
+             <div class="row">
+               <div class="col-lg-6 col-md-12">
+                 <div class="about-image">
+                   <img src="./Img/3.jpg" class="img-fluid wow fadeInLeft">
+                 </div>
+               </div>
+               <div class="col-lg-6 col-md-12 about-title">
+                 <h2 class="pt-5 wow fadeInRight">
+                <span>Let me</span>
+                <span>introduce</span>
+                <span>myself</span>
+            </h2>
+            <div class="paragraph py-4 w-75 wow fadeInRight">
+                <p class="para">
+                     I am Abdur Rehman; Born,raised and living in Gujrat, Punjab. I am currenly studying
+                     Multimedia from UOG to become an inspiring icon in the industry.
+                </p>
+                <p class="para">
+                    For me, Photos, Videos & Films are more then just means of entertainment. I believe these
+                    things have certain moments & feelings captured in them. All around us, there are these so
+                    called "things" that I think have souls & emotions entrapped in them. My job is to bring
+                    those out of their cages. 
+                </p>
+            </div>
+               </div> 
+             </div>
+           </div>
+         </section>
+
+          <!--End of about section-->
+
+          <!--Start of services section-->
+
+         
+        <section class="services-area" id="services">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-12 text-center services-title">
+                      <h1 class="text-uppercase title-text wow fadeInLeft">Services Offered</h1>
+                      <p class="para wow fadeInRight">
+                           Utilising my promising, polished & self-taught yet unexperienced skillset, I offer these
+                           services 
+                      </p>
+                  </div>
+              </div>
+              <div class="container services-list">
+                  <div class="row">
+                      <div class="col-lg-3 col-md-6 col-sm-12">
+                          <div class="services wow fadeInUp" data-wow-delay="0.1s">
+                              <div class="sevices-img text-center py-4">
+                                  <img src="./Img/design.png" alt="Services-1">
+                              </div>
+                              <div class="card-body text-center">
+                                  <h5 class="card-title text-uppercase ">Designing</h5>
+                                  <p class="card-text text-secondary">
+                                      Logos, Art, Portraits, Banners,
+                                      Thumbnails, Product Designs &
+                                      Ideas
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6 col-sm-12">
+                          <div class="services wow fadeInUp" data-wow-delay="0.2s">
+                              <div class="sevices-img text-center py-4">
+                                  <img src="./Img/editing.png" alt="Services-2">
+                              </div>
+                              <div class="card-body text-center">
+                                  <h5 class="card-title text-uppercase font-roboto">Editing</h5>
+                                  <p class="card-text text-secondary">
+                                    Photo editing, Video editing, Manipulation,
+                                    Wide range of effects &
+                                    Voice Overs
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6 col-sm-12">
+                          <div class="services wow fadeInUp" data-wow-delay="0.3s">
+                              <div class="sevices-img text-center py-4">
+                                  <img src="./Img/photo.png" alt="Services-3">
+                              </div>
+                              <div class="card-body text-center">
+                                  <h5 class="card-title text-uppercase font-roboto">Photography</h5>
+                                  <p class="card-text text-secondary">
+                                      Photoshoots, Event coverage, Scenery
+                                      Capturing, Portraits 
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6 col-sm-12">
+                          <div class="services wow fadeInUp" data-wow-delay="0.4s">
+                              <div class="sevices-img text-center py-4">
+                                  <img src="./Img/film.png" alt="Services-4">
+                              </div>
+                              <div class="card-body text-center">
+                                  <h5 class="card-title text-uppercase font-roboto">Film Making</h5>
+                                  <p class="card-text text-secondary">
+                                      Cinematography, Director, Producer,
+                                      Dialouge Writing & Black Cat Production
+                                      house
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+          <!--End of services section-->
+
+          <!--Portfolio Area-->
+
+          <section class="project-area" id="portfolio">
+            <div class="container">
+                <div class="project-title pb-5">
+                    <h1 class="text-uppercase title-h1 wow fadeInLeft">Career Portfolio</h1>
+                </div>
+
+                <div class="row grid">
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item latest">
+                        <div class="our-project">
+                            <div class="img">
+                                <a class="test-popup-link" href="./Img/port1.jpg">
+                                    <img src="./Img/port1.jpg" alt="portfolio-1" class="img-fluid wow fadeInLeft">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item popular">
+                        <div class="our-project">
+                            <div class="img">
+                                <a class="test-popup-link" href="./Img/painted1.jpg">
+                                    <img src="./Img/painted1.jpg" alt="portfolio-2" class="img-fluid wow fadeInUp">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item popular">
+                        <div class="our-project">
+                            <div class="img">
+                                <a class="test-popup-link" href="./Img/3.jpg">
+                                    <img src="./Img/3.jpg" alt="portfolio-3" class="img-fluid wow fadeInRight">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item upcoming">
+                        <div class="our-project">
+                            <div class="img">
+                                <a class="test-popup-link" href="./Img/shot2.jpg">
+                                    <img src="./Img/shot2.jpg" alt="portfolio-4" class="img-fluid wow fadeInLeft">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item upcoming">
+                        <div class="our-project">
+                            <div class="img">
+                                <a class="test-popup-link" href="./Img/shot3.jpg">
+                                    <img src="./Img/shot3.jpg" alt="portfolio-5" class="img-fluid wow fadeIn" data-wow-delay=".2s">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item following">
+                        <div class="our-project">
+                            <div class="img">
+                                <a class="test-popup-link" href="./Img/shot4.jpg">
+                                    <img src="./Img/shot4.jpg" alt="portfolio-6" class="img-fluid wow fadeInRight">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item following">
+                        <div class="our-project">
+                            <div class="img">
+                                <a class="test-popup-link" href="./Img/film1.jpg">
+                                    <img src="./Img/film1.jpg" alt="portfolio-7" class="img-fluid wow fadeInLeft">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item following">
+                        <div class="our-project">
+                            <div class="img">
+                                <a class="test-popup-link" href="./Img/shot1.jpg">
+                                    <img src="./Img/shot1.jpg" alt="portfolio-8" class="img-fluid wow fadeInUp">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item upcoming">
+                        <div class="our-project">
+                            <div class="img">
+                                <a class="test-popup-link" href="./Img/manu1.jpg">
+                                    <img src="./Img/manu1.jpg" alt="portfolio-9" class="img-fluid wow fadeInRight">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--End of portfolio-->
+
+        <!--Contact/footer-->
+
+        <section class="subscribe-us-area" id="contact">
+          <div class="container subscribe">
+              <div class="row">
+                  <div class="col-lg-12 text-center subscribe-title">
+                      <h4 class="text-uppercase wow fadeInLeft">Contact me</h4>
+                      <p class="para wow fadeInLeft">Enter your email here and I'll personally mail you
+                        for any dealing
+                      </p>
+                  </div>
+              </div>
+              <div class="d-sm-flex justify-content-center">
+                  <form class="w-50">
+                      <div class="row d-flex flex-row flex-wrap">
+                          <div class="col input-textbox wow fadeInRight">
+                              <input type="text" id="txtemail" class="form-control" placeholder="Email">
+                          </div>
+                          <div class="col">
+                              <div class="btn-submit">
+                                  <button type="submit" class="btn btn-success float-right wow fadeInRight">Submit</button>
+                              </div>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </section>
+
+      <footer class="footer-area">
+        <div class="container">
+            <div class="">
+                <div class="site-logo text-center py-4 wow fadeInUp">
+                    <a href="#"><img src="./img/logo.png" alt="logo"></a>
+                </div>
+                <div class="social text-center">
+                    <a href="#"><i class="bi bi-facebook wow fadeInUp"  data-wow-delay="0.1s"  style="color: white;"></i></a>
+                    <a href="#"><i class="bi bi-instagram wow fadeInUp"  data-wow-delay="0.2s"  style="color: white;"></i></a>
+                    <a href="#"><i class="bi bi-twitter wow fadeInUp"  data-wow-delay="0.3s"  style="color: white;"></i></a>
+                    <a href="#"><i class="bi bi-youtube wow fadeInUp"  data-wow-delay="0.4s"  style="color: white;"></i></a>
+                </div>
+                <div class="copyrights text-center" style="padding-top: 2rem;">
+                    <p class="para wow fadeInUp">
+                      Copyright ©2021 All rights reserved | Designed by Wajahat Ali 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+        <!--End of contact footer-->
+
+         <!--Javascript-->
+         <script src="./JS/jquery.min.js"></script>
+         <script src="./JS/jquery-3.3.1.min.js"></script>
+        <script src="./JS/bootstrap.min.js"></script>
+     </body>
+ </html>
