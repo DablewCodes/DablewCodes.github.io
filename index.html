@@ -9,12 +9,12 @@
     <link rel="icon" type="image/png" href="Img/favi.png" />
     <meta property="og:url" content="https://dablewcodes.github.io/" />
     <meta property="og:description" content="Wajahat Ali — Data, Automation & AI specialist crafting intelligent workflows, analytics, and integrations." />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <meta property="og:image" content="https://i.postimg.cc/JnJFDSK4/Logo-(7)-Copy.png" />
     <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
@@ -22,6 +22,13 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
+    <div class="bg-animated" aria-hidden="true">
+      <div class="bg-blob b1"></div>
+      <div class="bg-blob b2"></div>
+      <div class="bg-blob b3"></div>
+      <div class="bg-blob b4"></div>
+    </div>
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
     <script>
       AOS.init({
         duration: 700,
@@ -44,6 +51,7 @@
           <span class="sr-only">Toggle navigation</span>
           <span></span>
           <span></span>
+          <span></span>
         </button>
         <ul class="nav-links" id="primary-navigation">
           <li><a href="#about">About</a></li>
@@ -57,7 +65,7 @@
       </nav>
       <section class="hero">
         <div class="hero-text" data-aos="fade-right">
-          <p class="eyebrow">Hello, I'm</p>
+          <p class="eyebrow">● Available for work</p>
           <h1>Wajahat Ali</h1>
           <p class="lead">
             A newbie technology generalist focused on <span class="highlight">data analytics</span>, <span class="highlight">automation / scripting / scraping</span>, and <span class="highlight">AI integration in existing workflows</span>.
@@ -65,6 +73,20 @@
           <div class="hero-actions">
             <a class="btn primary" href="#projects">View Projects</a>
             <a class="btn ghost" href="#contact">Let's Talk</a>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <span class="hero-stat-value">15+</span>
+              <span class="hero-stat-label">Projects</span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat-value">4+</span>
+              <span class="hero-stat-label">Years</span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat-value">20+</span>
+              <span class="hero-stat-label">Tools</span>
+            </div>
           </div>
         </div>
         <div class="hero-visual" aria-hidden="true" data-aos="zoom-in">
@@ -83,6 +105,7 @@
     <main>
       <section class="section" id="about" data-aos="fade-up">
         <div class="section-heading">
+          <span class="section-badge">01 — About</span>
           <h2>Introduction</h2>
           <p>
             A newbie technology generalist with a strong focus on data analytics, automation, scripting/scraping, and AI integration into real-world workflows. I enjoy crafting innovative solutions, iterating quickly, and replacing manual processes with reliable, scalable systems.
@@ -90,63 +113,82 @@
         </div>
         <div class="about-grid">
           <article class="about-card" data-aos="fade-up" data-aos-delay="50">
+            <div class="about-card-icon">✦</div>
             <h3>Philosophy</h3>
             <p>
               Make data useful, automate responsibly, craft scalable backends, and layer AI where it truly amplifies impact.
             </p>
           </article>
           <article class="about-card" data-aos="fade-up" data-aos-delay="120">
+            <div class="about-card-icon">◈</div>
             <h3>Experience</h3>
             <p>
               Lead Automation Engineer at Buildberg, former Jr. Python developer at Evan Carmichael Communications Group, with internships across data engineering and student counselling.
             </p>
           </article>
           <article class="about-card" data-aos="fade-up" data-aos-delay="190">
+            <div class="about-card-icon">⬡</div>
             <h3>Focus Areas</h3>
             <p>Data analytics, workflow automation, AI agents, ETL pipelines, and cloud-native experimentation—mainly with Python, SQL, and modern tooling.</p>
           </article>
         </div>
       </section>
 
-      
       <section class="section tinted" id="skills" data-aos="fade-up">
         <div class="section-heading">
+          <span class="section-badge">02 — Toolkit</span>
           <h2>Skills & Tools</h2>
           <p>A toolkit built around data, automation, and AI, honed through hands-on experiments, client delivery, and continuous learning.</p>
         </div>
         <div class="skills-grid">
           <div class="skills-column" data-aos="fade-up" data-aos-delay="50">
             <h3>Data & Analytics</h3>
-            <ul>
-              <li>Exploratory data analysis & reporting</li>
-              <li>Dashboards in Tableau & Looker Studio</li>
-              <li>Working with large datasets in Excel & Google Sheets</li>
-              <li>Applied analytical skills for business decision-making</li>
-            </ul>
+            <div class="skill-tags">
+              <span class="skill-tag">Exploratory Analysis</span>
+              <span class="skill-tag">Tableau</span>
+              <span class="skill-tag">Looker Studio</span>
+              <span class="skill-tag">Excel</span>
+              <span class="skill-tag">Google Sheets</span>
+              <span class="skill-tag">Reporting</span>
+            </div>
           </div>
           <div class="skills-column" data-aos="fade-up" data-aos-delay="120">
-            <h3>Automation, Scripting & AI</h3>
-            <ul>
-              <li>Workflow automation with Zapier, Make, n8n</li>
-              <li>Python & Google Apps Script for ETL, APIs & scraping</li>
-              <li>Designing and deploying AI agents (Relevance AI, Vapi, n8n)</li>
-              <li>Sales/marketing automations in GoHighLevel & Airtable</li>
-            </ul>
+            <h3>Automation & AI</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Zapier</span>
+              <span class="skill-tag">Make</span>
+              <span class="skill-tag">n8n</span>
+              <span class="skill-tag">AI Agents</span>
+              <span class="skill-tag">Relevance AI</span>
+              <span class="skill-tag">Vapi</span>
+              <span class="skill-tag">GoHighLevel</span>
+              <span class="skill-tag">Airtable</span>
+              <span class="skill-tag">Apps Script</span>
+            </div>
           </div>
           <div class="skills-column" data-aos="fade-up" data-aos-delay="190">
             <h3>Tech Stack</h3>
-            <ul>
-              <li>Languages: Python, SQL, JavaScript</li>
-              <li>Databases: MySQL, SQL Server, PostgreSQL, BigQuery, ClickHouse</li>
-              <li>Data tooling: Airflow, DBT, Airbyte, Kafka, Airtable</li>
-              <li>Cloud: Google Cloud Platform (GCP)</li>
-            </ul>
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">BigQuery</span>
+              <span class="skill-tag">ClickHouse</span>
+              <span class="skill-tag">Airflow</span>
+              <span class="skill-tag">DBT</span>
+              <span class="skill-tag">Airbyte</span>
+              <span class="skill-tag">Kafka</span>
+              <span class="skill-tag">GCP</span>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="section tinted" id="experience" data-aos="fade-up">
         <div class="section-heading">
+          <span class="section-badge">03 — Journey</span>
           <h2>Experience</h2>
           <p>
             A timeline of my roles across marketing, business operations, and fintech.
@@ -161,7 +203,6 @@
                   <h3>Buildberg</h3>
                   <div class="experience-meta">
                     <span><b>Lead Automation Engineer</b> · Nov 2025 — Present</span>
-                    <span>Remote</span>
                   </div>
                 </header>
                 <ul>
@@ -253,23 +294,36 @@
 
       <section class="section" id="education" data-aos="fade-up">
         <div class="section-heading">
-          <h2>Education</h2>
-          <p>
-            <b>University of Engineering and Technology, Taxila</b> — Bachelor's degree in Computer Science<br />
-            October 2020 – June 2024
-          </p>
+          <span class="section-badge">04 — Education</span>
+          <h2>Academic Background</h2>
         </div>
+        <article class="edu-card" data-aos="fade-up" data-aos-delay="50">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-body">
+            <h3>University of Engineering and Technology, Taxila</h3>
+            <p class="edu-degree">Bachelor of Science in Computer Science</p>
+            <span class="edu-dates">October 2020 – June 2024</span>
+          </div>
+        </article>
       </section>
 
       <section class="section tinted" id="projects" data-aos="fade-up">
         <div class="section-heading">
+          <span class="section-badge">05 — Selected Work</span>
           <h2>Projects</h2>
           <p>
-            A portfolio of projects I have worked on.
+            A portfolio of projects I have worked on. Filter by category below.
           </p>
         </div>
+        <div class="project-filters" role="group" aria-label="Filter projects">
+          <button class="project-filter-btn active" data-filter="all" type="button">All</button>
+          <button class="project-filter-btn" data-filter="analytics" type="button">Analytics</button>
+          <button class="project-filter-btn" data-filter="ai" type="button">AI</button>
+          <button class="project-filter-btn" data-filter="automation" type="button">Automation</button>
+          <button class="project-filter-btn" data-filter="dev" type="button">Dev / Data Science</button>
+        </div>
         <div class="projects-grid">
-          <article class="project-card" data-aos="fade-up" data-aos-delay="50">
+          <article class="project-card" data-category="analytics" data-aos="fade-up" data-aos-delay="50">
             <img src="Img/cyclistic.png" alt="Cyclistic Bike Share Data Analysis" loading="lazy" />
             <div class="project-content">
               <span class="project-meta">Data Analytics</span>
@@ -281,10 +335,10 @@
                 <span>Data Analysis</span>
                 <span>Tableau</span>
               </div>
-              <a class="project-link" href="https://public.tableau.com/views/CyclisticBikeRentalServiceAnalysisCapstoneProjectforGoogleDataAnalyticsCourse/CyclisticDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" aria-label="Reach out for more details about Buildberg Workflow Suite">View Project</a>
+              <a class="project-link" href="https://public.tableau.com/views/CyclisticBikeRentalServiceAnalysisCapstoneProjectforGoogleDataAnalyticsCourse/CyclisticDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" rel="noopener">View Project</a>
             </div>
           </article>
-          <article class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <article class="project-card" data-category="analytics" data-aos="fade-up" data-aos-delay="100">
             <img src="Img/covid.png" alt="covid data analysis" loading="lazy" />
             <div class="project-content">
               <span class="project-meta">Data Analytics</span>
@@ -296,11 +350,11 @@
                 <span>Data Analysis</span>
                 <span>Tableau</span>
               </div>
-              <a class="project-link" href="https://public.tableau.com/views/CovidAnalysis_16806876047600/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" aria-label="Reach out for more details about Content Intelligence Platform">View Project</a>
+              <a class="project-link" href="https://public.tableau.com/views/CovidAnalysis_16806876047600/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" rel="noopener">View Project</a>
             </div>
           </article>
-          <article class="project-card" data-aos="fade-up" data-aos-delay="150">
-            <img src="Img/airbnb.png" alt="AI hackathon prototypes and automation demos" loading="lazy" />
+          <article class="project-card" data-category="analytics" data-aos="fade-up" data-aos-delay="150">
+            <img src="Img/airbnb.png" alt="Airbnb data visualization" loading="lazy" />
             <div class="project-content">
               <span class="project-meta">Data Analytics</span>
               <h3>Airbnb Data Visualization</h3>
@@ -311,26 +365,26 @@
                 <span>Data Analysis</span>
                 <span>Tableau</span>
               </div>
-              <a class="project-link" href="https://public.tableau.com/shared/B9K4S8RNS?:display_count=n&:origin=viz_share_link" aria-label="Reach out for more details about AI Automation Prototypes">View Project</a>
+              <a class="project-link" href="https://public.tableau.com/shared/B9K4S8RNS?:display_count=n&:origin=viz_share_link" target="_blank" rel="noopener">View Project</a>
             </div>
           </article>
-          <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+          <article class="project-card" data-category="ai" data-aos="fade-up" data-aos-delay="200">
             <img src="Img/podcast.webp" alt="ai powered podcast generator" loading="lazy" />
             <div class="project-content">
               <span class="project-meta">AI</span>
               <h3>Podcast Generator</h3>
               <p>
-                An ai-powered tool which converts articles, blog posts, or YT videos in audio podcasts.
+                An AI-powered tool which converts articles, blog posts, or YT videos into audio podcasts.
               </p>
               <div class="project-tags">
                 <span>AI</span>
                 <span>Python</span>
               </div>
-              <a class="project-link" href="https://lablab.ai/event/eleven-labs-ai-hackathon/virtual-influencers/collabtalk-ai-dialogue-podcast-generator" aria-label="Reach out for more details about AI Automation Prototypes">View Project</a>
+              <a class="project-link" href="https://lablab.ai/event/eleven-labs-ai-hackathon/virtual-influencers/collabtalk-ai-dialogue-podcast-generator" target="_blank" rel="noopener">View Project</a>
             </div>
           </article>
 
-          <article class="project-card" data-aos="fade-up" data-aos-delay="250">
+          <article class="project-card" data-category="ai" data-aos="fade-up" data-aos-delay="250">
             <img src="Img/agent.webp" alt="ai powered virtual ai person" loading="lazy" />
             <div class="project-content">
               <span class="project-meta">AI</span>
@@ -342,12 +396,12 @@
                 <span>AI</span>
                 <span>Python</span>
               </div>
-              <a class="project-link" href="https://lablab.ai/event/ai-agents-hackathon-2/let-them-live-2/let-them-talk-auto-gpt-virtual-influencer" aria-label="Reach out for more details about AI Automation Prototypes">View Project</a>
+              <a class="project-link" href="https://lablab.ai/event/ai-agents-hackathon-2/let-them-live-2/let-them-talk-auto-gpt-virtual-influencer" target="_blank" rel="noopener">View Project</a>
             </div>
           </article>
-          
-          <article class="project-card" data-aos="fade-up" data-aos-delay="300">
-            <img src="Img/voice.jpg" alt="ai powered virtual ai person" loading="lazy" />
+
+          <article class="project-card" data-category="automation" data-aos="fade-up" data-aos-delay="300">
+            <img src="Img/voice.jpg" alt="video dubbing pipeline" loading="lazy" />
             <div class="project-content">
               <span class="project-meta">Automation</span>
               <h3>VoiceVoyage</h3>
@@ -358,12 +412,12 @@
                 <span>Web Development</span>
                 <span>Python</span>
               </div>
-              <a class="project-link" href="https://github.com/DablewCodes/voicevoyage.ai" aria-label="Reach out for more details about AI Automation Prototypes">View Project</a>
+              <a class="project-link" href="https://github.com/DablewCodes/voicevoyage.ai" target="_blank" rel="noopener">View Project</a>
             </div>
           </article>
 
-          <article class="project-card" data-aos="fade-up" data-aos-delay="350">
-            <img src="Img/amazon.png" alt="ai powered virtual ai person" loading="lazy" />
+          <article class="project-card" data-category="automation" data-aos="fade-up" data-aos-delay="350">
+            <img src="Img/amazon.png" alt="amazon scraper script" loading="lazy" />
             <div class="project-content">
               <span class="project-meta">Automation</span>
               <h3>Amazon Scraper</h3>
@@ -374,30 +428,30 @@
                 <span>Scripting/Scraping</span>
                 <span>Python</span>
               </div>
-              <a class="project-link" href="https://github.com/DablewCodes/amazon_scrapper" aria-label="Reach out for more details about AI Automation Prototypes">View Project</a>
+              <a class="project-link" href="https://github.com/DablewCodes/amazon_scrapper" target="_blank" rel="noopener">View Project</a>
             </div>
           </article>
 
-          <article class="project-card" data-aos="fade-up" data-aos-delay="400">
-            <img src="Img/medium.png" alt="ai powered virtual ai person" loading="lazy" />
+          <article class="project-card" data-category="automation" data-aos="fade-up" data-aos-delay="400">
+            <img src="Img/medium.png" alt="medium article scraper" loading="lazy" />
             <div class="project-content">
               <span class="project-meta">Automation</span>
               <h3>Medium Scraper</h3>
               <p>
-                A simple script to Scrape title, subtitle, author name & url, clap count, reading time, images and article text from Medium articles
+                A simple script to scrape title, subtitle, author, clap count, reading time, images and article text from Medium articles
               </p>
               <div class="project-tags">
                 <span>Scripting/Scraping</span>
                 <span>Python</span>
               </div>
-              <a class="project-link" href="https://github.com/DablewCodes/Medium-Scrapper" aria-label="Reach out for more details about AI Automation Prototypes">View Project</a>
+              <a class="project-link" href="https://github.com/DablewCodes/Medium-Scrapper" target="_blank" rel="noopener">View Project</a>
             </div>
           </article>
 
-          <article class="project-card" data-aos="fade-up" data-aos-delay="450">
-            <img src="Img/game.png" alt="ai powered virtual ai person" loading="lazy" />
+          <article class="project-card" data-category="dev" data-aos="fade-up" data-aos-delay="450">
+            <img src="Img/game.png" alt="game recommendation system" loading="lazy" />
             <div class="project-content">
-              <span class="project-meta">Data Analytics</span>
+              <span class="project-meta">Data Science</span>
               <h3>Recommendation System</h3>
               <p>
                 This recommendation model utilizes a content-based filtering approach to suggest games related to a user-entered title.
@@ -406,28 +460,28 @@
                 <span>Data Science</span>
                 <span>Python</span>
               </div>
-              <a class="project-link" href="https://github.com/DablewCodes/Game-Recommendation-System" aria-label="Reach out for more details about AI Automation Prototypes">View Project</a>
+              <a class="project-link" href="https://github.com/DablewCodes/Game-Recommendation-System" target="_blank" rel="noopener">View Project</a>
             </div>
           </article>
 
-          <article class="project-card" data-aos="fade-up" data-aos-delay="500">
-            <img src="Img/solar.gif" alt="ai powered virtual ai person" loading="lazy" />
+          <article class="project-card" data-category="dev" data-aos="fade-up" data-aos-delay="500">
+            <img src="Img/solar.gif" alt="solar system simulation" loading="lazy" />
             <div class="project-content">
-              <span class="project-meta">Data Analytics</span>
+              <span class="project-meta">Data Science</span>
               <h3>Solar System Simulation</h3>
               <p>
-                A barebone simulation of solar systems in both 2D and 3D prespectives using Python
+                A barebone simulation of solar systems in both 2D and 3D perspectives using Python
               </p>
               <div class="project-tags">
                 <span>Data Science</span>
                 <span>Python</span>
               </div>
-              <a class="project-link" href="https://github.com/DablewCodes/Solar-System-Simulation" aria-label="Reach out for more details about AI Automation Prototypes">View Project</a>
+              <a class="project-link" href="https://github.com/DablewCodes/Solar-System-Simulation" target="_blank" rel="noopener">View Project</a>
             </div>
           </article>
 
-          <article class="project-card" data-aos="fade-up" data-aos-delay="550">
-            <img src="Img/cleaning.png" alt="ai powered virtual ai person" loading="lazy" />
+          <article class="project-card" data-category="analytics" data-aos="fade-up" data-aos-delay="550">
+            <img src="Img/cleaning.png" alt="housing data cleaning with sql" loading="lazy" />
             <div class="project-content">
               <span class="project-meta">Data Analytics</span>
               <h3>Housing Data Cleaning</h3>
@@ -438,37 +492,44 @@
                 <span>Data Analysis</span>
                 <span>SQL</span>
               </div>
-              <a class="project-link" href="https://github.com/DablewCodes/Nashville-Housing-Data-Cleaning" aria-label="Reach out for more details about AI Automation Prototypes">View Project</a>
+              <a class="project-link" href="https://github.com/DablewCodes/Nashville-Housing-Data-Cleaning" target="_blank" rel="noopener">View Project</a>
             </div>
           </article>
 
         </div>
-          
-          
       </section>
 
       <section class="section" id="testimonials" data-aos="fade-up">
         <div class="section-heading">
+          <span class="section-badge">06 — Kind Words</span>
           <h2>Testimonials</h2>
           <p>Highlights of feedback from my previous employers.</p>
         </div>
         <div class="testimonials-grid">
           <figure class="testimonial-card" data-aos="fade-up" data-aos-delay="50">
+            <div class="testimonial-quote-mark">“</div>
             <blockquote>
-              “I highly recommend Wajahat for his dedication, quick learning abilities and positive attitude. During the tenure of 1 months internship, Wajahat was very punctual and hard working. He will be an asset to any team he join.”
+              I highly recommend Wajahat for his dedication, quick learning abilities and positive attitude. During the tenure of 1 months internship, Wajahat was very punctual and hard working. He will be an asset to any team he join.
             </blockquote>
             <figcaption>
-              <span class="name">Talha Habib</span>
-              <span class="role">Ace Money Transfer</span>
+              <div class="testimonial-avatar">TH</div>
+              <div>
+                <span class="name">Talha Habib</span>
+                <span class="role">Ace Money Transfer</span>
+              </div>
             </figcaption>
           </figure>
           <figure class="testimonial-card" data-aos="fade-up" data-aos-delay="120">
+            <div class="testimonial-quote-mark">“</div>
             <blockquote>
-              “Wajahat has been great with helping our content operations run smoothly and get everything out on time :)”
+              Wajahat has been great with helping our content operations run smoothly and get everything out on time :)
             </blockquote>
             <figcaption>
-              <span class="name">Evan Carmichael</span>
-              <span class="role">Evan Carmichael Communications Group</span>
+              <div class="testimonial-avatar">EC</div>
+              <div>
+                <span class="name">Evan Carmichael</span>
+                <span class="role">Evan Carmichael Communications Group</span>
+              </div>
             </figcaption>
           </figure>
         </div>
@@ -476,18 +537,25 @@
 
       <section class="section tinted" id="writing" data-aos="fade-up">
         <div class="section-heading">
+          <span class="section-badge">07 — Notes</span>
           <h2>Writing</h2>
           <p>
-            I also sometimes write — check my stuff at
-            <a href="https://dableuwrites.blogspot.com/" target="_blank" rel="noopener" style="text-decoration: underline;"
-              >dableuwrites.blogspot.com</a
-            >.
+            I occasionally write about stuff.
           </p>
         </div>
+        <a class="writing-card" href="https://dableuwrites.blogspot.com/" target="_blank" rel="noopener" data-aos="fade-up" data-aos-delay="80">
+          <div class="writing-card-content">
+            <p class="writing-card-label">Personal Blog</p>
+            <h3>dableuwrites.blogspot.com</h3>
+            <p>Thoughts, experiments, and occasional rants.</p>
+          </div>
+          <span class="writing-card-arrow">↗</span>
+        </a>
       </section>
 
       <section class="section" id="contact" data-aos="fade-up">
         <div class="section-heading">
+          <span class="section-badge">08 — Contact</span>
           <h2>Let's Collaborate</h2>
           <p>Have a workflow to optimize or a data challenge to tackle? I'm open to collaborations, freelance engagements, and full-time opportunities.</p>
           <p class="contact-meta">
@@ -524,7 +592,8 @@
       </div>
     </footer>
 
+    <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top">↑</button>
+
     <script src="script.js"></script>
   </body>
 </html>
-
