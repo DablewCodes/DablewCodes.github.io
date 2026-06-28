@@ -33,6 +33,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 92px;
 }
 
 body {
@@ -225,7 +226,7 @@ a {
 /* ─── HEADER & NAV ─── */
 .site-header {
   position: relative;
-  padding: var(--gutter) var(--gutter) 0;
+  padding: calc(var(--gutter) + 60px) var(--gutter) 0;
   overflow: hidden;
 }
 
@@ -241,8 +242,10 @@ a {
   border: 1px solid var(--border);
   border-radius: 999px;
   box-shadow: 0 8px 32px rgba(2, 5, 15, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.04);
-  position: sticky;
+  position: fixed;
   top: 16px;
+  left: var(--gutter);
+  right: var(--gutter);
   z-index: 100;
 }
 
@@ -332,6 +335,21 @@ a {
 .nav-links a.active {
   color: var(--text);
   background: var(--accent-soft);
+}
+
+.nav-links a.nav-resume {
+  margin-left: 6px;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border: 1px solid var(--accent-strong);
+  font-weight: 600;
+}
+
+.nav-links a.nav-resume:hover,
+.nav-links a.nav-resume:focus-visible {
+  color: #fff;
+  background: var(--accent);
+  border-color: var(--accent);
 }
 
 /* ─── HERO ─── */
@@ -908,6 +926,13 @@ main {
   letter-spacing: 0.02em;
 }
 
+.edu-cgpa {
+  margin-left: 8px;
+  color: var(--accent-2);
+  background: rgba(34, 211, 238, 0.08);
+  border-color: rgba(34, 211, 238, 0.22);
+}
+
 /* ─── PROJECTS ─── */
 .project-filters {
   display: flex;
@@ -1148,6 +1173,37 @@ main {
   font-size: 0.82rem;
 }
 
+/* ─── CERTIFICATES ─── */
+.certs-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.cert-tag {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: 0.86rem;
+  font-weight: 500;
+  box-shadow: 0 10px 24px rgba(4, 6, 14, 0.4);
+  transition: background var(--transition), border-color var(--transition), color var(--transition), transform var(--transition);
+  cursor: default;
+}
+
+.cert-tag:hover {
+  background: var(--accent-soft);
+  border-color: rgba(124, 108, 240, 0.35);
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+
 /* ─── WRITING ─── */
 .writing-card {
   display: flex;
@@ -1350,8 +1406,6 @@ main {
 @media (max-width: 900px) {
   .navbar {
     border-radius: var(--radius-md);
-    position: relative;
-    top: 0;
   }
 
   .menu-toggle {
